@@ -10,8 +10,17 @@ DEVICE_PATH := device/tecno/kj
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
+#fix touchscreen not needed now
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_DUP_RULES := true
+
 #NETWORK
 BUILD_BROKEN_USES_NETWORK := true
+
+# These two are for MTK Chipsets only
+BOARD_USES_MTK_HARDWARE := true
+BOARD_HAS_MTK_HARDWARE := true
+MTK_HARDWARE := true
 
 # A/B
 AB_OTA_UPDATER := true
@@ -64,6 +73,8 @@ BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
+BOARD_KERNEL_SEPARATED_DTBO :=
 TARGET_KERNEL_CONFIG := kj_defconfig
 TARGET_KERNEL_SOURCE := kernel/tecno/kj
 
