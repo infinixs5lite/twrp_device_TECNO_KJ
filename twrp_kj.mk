@@ -28,8 +28,9 @@ $(call inherit-product, $(DEVICE_PATH)/device.mk)
 TARGET_OTA_ASSERT_DEVICE := kj
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := kj
-PRODUCT_BRAND := kj
-PRODUCT_MODEL := kj
-PRODUCT_MANUFACTURER := kj
 PRODUCT_NAME := twrp_kj
+PRODUCT_DEVICE := kj
+PRODUCT_MODEL := kj
+PRODUCT_BRAND := tecno
+PRODUCT_MANUFACTURER := tecno
+PRODUCT_GMS_CLIENTID_BASE := android-tecno
