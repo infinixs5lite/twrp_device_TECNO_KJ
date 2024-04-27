@@ -10,6 +10,9 @@ DEVICE_PATH := device/tecno/KJ
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
+#NETWORK
+BUILD_BROKEN_USES_NETWORK := true
+
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
