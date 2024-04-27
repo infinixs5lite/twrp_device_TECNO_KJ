@@ -1,4 +1,4 @@
-# Android device tree for TECNO TECNO KJ6 (TECNO-KJ6)
+# TWRP device tree for TECNO (TECNO-KJ6)
 
 ```
 #
