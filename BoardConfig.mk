@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/tecno/KJ6
+DEVICE_PATH := device/tecno/KJ
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -43,7 +43,7 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := TECNO-KJ6
+TARGET_BOOTLOADER_BOARD_NAME := TECNO-KJ
 TARGET_NO_BOOTLOADER := true
 
 # Display
@@ -62,8 +62,8 @@ BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-TARGET_KERNEL_CONFIG := KJ6_defconfig
-TARGET_KERNEL_SOURCE := kernel/tecno/KJ6
+TARGET_KERNEL_CONFIG := KJ_defconfig
+TARGET_KERNEL_SOURCE := kernel/tecno/KJ
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
