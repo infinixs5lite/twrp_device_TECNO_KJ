@@ -1,14 +1,4 @@
 // SPDX-License-Identifier: Apache-2.0
 
-cc_library_shared {
-    name: "bootctrl",
-    srcs: [
-        "bootctrl.mt6789.c",
-        "libgptutils.c",
-        "libcutils.c",
-    ],
-    shared_libs: [
-        "libz",
-        "libcutils",
-    ],
+soong_namespace {
 }
