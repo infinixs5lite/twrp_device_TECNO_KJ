@@ -33,3 +33,4 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_verifier \
     update_engine_sideload
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
