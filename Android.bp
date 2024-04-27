@@ -1,16 +1,10 @@
-//
-// Copyright (C) 2024 The Android Open Source Project
-// Copyright (C) 2024 SebaUbuntu's TWRP device tree generator
-//
 // SPDX-License-Identifier: Apache-2.0
-//
 
 cc_library_shared {
-    name: "my_shared_library",
+    name: "bootctrl",
     srcs: [
         "bootctrl.mt6789.c",
         "libgptutils.c",
-        "libz.c",
         "libcutils.c",
     ],
     shared_libs: [
