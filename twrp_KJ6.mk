@@ -9,21 +9,16 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common TWRP stuff.
+# Inherit some common Twrp stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
-# Inherit from KJ6 device
-$(call inherit-product, device/tecno/KJ6/device.mk)
+# Inherit from KJ device
+$(call inherit-product, device/tecno/KJ/device.mk)
 
-PRODUCT_DEVICE := KJ6
-PRODUCT_NAME := twrp_KJ6
+PRODUCT_DEVICE := KJ
+PRODUCT_NAME := twrp_KJ
 PRODUCT_BRAND := TECNO
-PRODUCT_MODEL := KJ6
+PRODUCT_MODEL := KJ
 PRODUCT_MANUFACTURER := tecno
 
 PRODUCT_GMS_CLIENTID_BASE := android-tecno
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="vext_kj6_h897-user 12 SP1A.210812.016 482344 release-keys"
-
-BUILD_FINGERPRINT := TECNO/KJ6-OP/TECNO-KJ6:12/SP1A.210812.016/231117V849:user/release-keys
