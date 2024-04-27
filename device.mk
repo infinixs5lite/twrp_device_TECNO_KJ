@@ -15,7 +15,7 @@
 #
 
 
-LOCAL_PATH := device/tecno/kj
+LOCAL_PATH := device/tecno/KJ6
 
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
