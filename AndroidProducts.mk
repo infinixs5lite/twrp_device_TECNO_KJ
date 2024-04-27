@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_KJ6.mk
+    $(LOCAL_DIR)/twrp_KJ.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_KJ6-user \
-    twrp_KJ6-userdebug \
-    twrp_KJ6-eng
+    twrp_KJ-user \
+    twrp_KJ-userdebug \
+    twrp_KJ-eng
